@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120806203914) do
+ActiveRecord::Schema.define(:version => 20121010030845) do
+
+  create_table "cap60mails", :force => true do |t|
+    t.integer  "bcs_key"
+    t.string   "name"
+    t.date     "birth_date"
+    t.string   "primary_caregiver"
+    t.integer  "home_phone"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zipcode"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
