@@ -1,0 +1,41 @@
+<h1>Listing cap60mails</h1>
+
+<table>
+  <tr>
+    <th>Bcs key</th>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Birth date</th>
+    <th>Primary caregiver</th>
+    <th>Home phone</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cap60mails.each do |cap60mail| %>
+  <tr>
+    <td><%= cap60mail.bcs_key %></td>
+    <td><%= cap60mail.id %></td>
+    <td><%= cap60mail.name %></td>
+    <td><%= cap60mail.birth_date %></td>
+    <td><%= cap60mail.primary_caregiver %></td>
+    <td><%= cap60mail.home_phone %></td>
+    <td><%= cap60mail.address %></td>
+    <td><%= cap60mail.city %></td>
+    <td><%= cap60mail.state %></td>
+    <td><%= cap60mail.zipcode %></td>
+    <td><%= link_to 'Show', cap60mail %></td>
+    <td><%= link_to 'Edit', edit_cap60mail_path(cap60mail) %></td>
+    <td><%= link_to 'Destroy', cap60mail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cap60mail', new_cap60mail_path %>

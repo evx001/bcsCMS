@@ -1,0 +1,57 @@
+<%= form_for(@cap60mail) do |f| %>
+  <% if @cap60mail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cap60mail.errors.count, "error") %> prohibited this cap60mail from being saved:</h2>
+
+      <ul>
+      <% @cap60mail.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bcs_key %><br />
+    <%= f.number_field :bcs_key %>
+  </div>
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_date %><br />
+    <%= f.date_select :birth_date %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_caregiver %><br />
+    <%= f.text_field :primary_caregiver %>
+  </div>
+  <div class="field">
+    <%= f.label :home_phone %><br />
+    <%= f.number_field :home_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br />
+    <%= f.number_field :zipcode %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
