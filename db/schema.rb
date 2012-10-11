@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121011045211) do
+ActiveRecord::Schema.define(:version => 20121011050409) do
+
+  create_table "awards", :force => true do |t|
+    t.integer  "bcs_key"
+    t.integer  "client_id"
+    t.string   "program"
+    t.string   "name_last_first"
+    t.string   "referred_by"
+    t.string   "intake_date"
+    t.date     "admission_date"
+    t.date     "date_of_birth"
+    t.string   "city_state_zip"
+    t.string   "phone"
+    t.string   "race"
+    t.string   "emergency_contact"
+    t.string   "emergency_contact_relation"
+    t.integer  "monthly_income_at_admission"
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
+  end
 
   create_table "cap60mails", :force => true do |t|
     t.integer  "bcs_key"
