@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121011042931) do
+ActiveRecord::Schema.define(:version => 20121011045211) do
 
   create_table "cap60mails", :force => true do |t|
     t.integer  "bcs_key"
@@ -25,6 +25,21 @@ ActiveRecord::Schema.define(:version => 20121011042931) do
     t.integer  "zipcode"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+  end
+
+  create_table "democap60s", :force => true do |t|
+    t.integer  "bcs_key"
+    t.string   "name"
+    t.string   "birth_date"
+    t.string   "ethnicity"
+    t.string   "race"
+    t.integer  "num_in_family"
+    t.integer  "yearly_income"
+    t.integer  "epc_points"
+    t.integer  "amount_under_over_poverty"
+    t.integer  "percent_under_over_poverty"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   create_table "dycds", :force => true do |t|
