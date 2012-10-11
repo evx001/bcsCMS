@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bcs_key: 1
+  grade_level: MyString
+  program_period: MyString
+  funded: MyString
+  enrollment_date: 2012-10-11
+  last_name: MyString
+  first_name: MyString
+  gender: MyString
+  birth_date: 2012-10-11
+  address: MyString
+  apartment: MyString
+  borough: MyString
+  zip_code: 1
+  ethnicity: MyString
+  grade: MyString
+  school_attending: MyString
+  primary_language: MyString
+  elementary: MyString
+  school_year: 1
+
+two:
+  bcs_key: 1
+  grade_level: MyString
+  program_period: MyString
+  funded: MyString
+  enrollment_date: 2012-10-11
+  last_name: MyString
+  first_name: MyString
+  gender: MyString
+  birth_date: 2012-10-11
+  address: MyString
+  apartment: MyString
+  borough: MyString
+  zip_code: 1
+  ethnicity: MyString
+  grade: MyString
+  school_attending: MyString
+  primary_language: MyString
+  elementary: MyString
+  school_year: 1

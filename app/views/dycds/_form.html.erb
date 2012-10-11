@@ -1,0 +1,93 @@
+<%= form_for(@dycd) do |f| %>
+  <% if @dycd.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dycd.errors.count, "error") %> prohibited this dycd from being saved:</h2>
+
+      <ul>
+      <% @dycd.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bcs_key %><br />
+    <%= f.number_field :bcs_key %>
+  </div>
+  <div class="field">
+    <%= f.label :grade_level %><br />
+    <%= f.text_field :grade_level %>
+  </div>
+  <div class="field">
+    <%= f.label :program_period %><br />
+    <%= f.text_field :program_period %>
+  </div>
+  <div class="field">
+    <%= f.label :funded %><br />
+    <%= f.text_field :funded %>
+  </div>
+  <div class="field">
+    <%= f.label :enrollment_date %><br />
+    <%= f.date_select :enrollment_date %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_date %><br />
+    <%= f.date_select :birth_date %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :apartment %><br />
+    <%= f.text_field :apartment %>
+  </div>
+  <div class="field">
+    <%= f.label :borough %><br />
+    <%= f.text_field :borough %>
+  </div>
+  <div class="field">
+    <%= f.label :zip_code %><br />
+    <%= f.number_field :zip_code %>
+  </div>
+  <div class="field">
+    <%= f.label :ethnicity %><br />
+    <%= f.text_field :ethnicity %>
+  </div>
+  <div class="field">
+    <%= f.label :grade %><br />
+    <%= f.text_field :grade %>
+  </div>
+  <div class="field">
+    <%= f.label :school_attending %><br />
+    <%= f.text_field :school_attending %>
+  </div>
+  <div class="field">
+    <%= f.label :primary_language %><br />
+    <%= f.text_field :primary_language %>
+  </div>
+  <div class="field">
+    <%= f.label :elementary %><br />
+    <%= f.text_field :elementary %>
+  </div>
+  <div class="field">
+    <%= f.label :school_year %><br />
+    <%= f.number_field :school_year %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

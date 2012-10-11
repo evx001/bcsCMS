@@ -1,5 +1,7 @@
 SamanthaCMS::Application.routes.draw do
 
+  resources :dycds
+
   resources :cap60mails
 
   # This line mounts Refinery's routes at the root of your application.

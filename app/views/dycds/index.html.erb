@@ -1,0 +1,59 @@
+<h1>Listing dycds</h1>
+
+<table>
+  <tr>
+    <th>Bcs key</th>
+    <th>Grade level</th>
+    <th>Program period</th>
+    <th>Funded</th>
+    <th>Enrollment date</th>
+    <th>Last name</th>
+    <th>First name</th>
+    <th>Gender</th>
+    <th>Birth date</th>
+    <th>Address</th>
+    <th>Apartment</th>
+    <th>Borough</th>
+    <th>Zip code</th>
+    <th>Ethnicity</th>
+    <th>Grade</th>
+    <th>School attending</th>
+    <th>Primary language</th>
+    <th>Elementary</th>
+    <th>School year</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dycds.each do |dycd| %>
+  <tr>
+    <td><%= dycd.bcs_key %></td>
+    <td><%= dycd.grade_level %></td>
+    <td><%= dycd.program_period %></td>
+    <td><%= dycd.funded %></td>
+    <td><%= dycd.enrollment_date %></td>
+    <td><%= dycd.last_name %></td>
+    <td><%= dycd.first_name %></td>
+    <td><%= dycd.gender %></td>
+    <td><%= dycd.birth_date %></td>
+    <td><%= dycd.address %></td>
+    <td><%= dycd.apartment %></td>
+    <td><%= dycd.borough %></td>
+    <td><%= dycd.zip_code %></td>
+    <td><%= dycd.ethnicity %></td>
+    <td><%= dycd.grade %></td>
+    <td><%= dycd.school_attending %></td>
+    <td><%= dycd.primary_language %></td>
+    <td><%= dycd.elementary %></td>
+    <td><%= dycd.school_year %></td>
+    <td><%= link_to 'Show', dycd %></td>
+    <td><%= link_to 'Edit', edit_dycd_path(dycd) %></td>
+    <td><%= link_to 'Destroy', dycd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dycd', new_dycd_path %>
