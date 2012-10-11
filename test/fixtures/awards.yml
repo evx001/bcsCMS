@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bcs_key: 1
+  client_id: 1
+  program: MyString
+  name_last_first: MyString
+  referred_by: MyString
+  intake_date: MyString
+  admission_date: 2012-10-11
+  date_of_birth: 2012-10-11
+  city_state_zip: MyString
+  phone: MyString
+  race: MyString
+  emergency_contact: MyString
+  emergency_contact_relation: MyString
+  monthly_income_at_admission: 1
+
+two:
+  bcs_key: 1
+  client_id: 1
+  program: MyString
+  name_last_first: MyString
+  referred_by: MyString
+  intake_date: MyString
+  admission_date: 2012-10-11
+  date_of_birth: 2012-10-11
+  city_state_zip: MyString
+  phone: MyString
+  race: MyString
+  emergency_contact: MyString
+  emergency_contact_relation: MyString
+  monthly_income_at_admission: 1

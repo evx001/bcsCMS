@@ -1,0 +1,73 @@
+<%= form_for(@award) do |f| %>
+  <% if @award.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@award.errors.count, "error") %> prohibited this award from being saved:</h2>
+
+      <ul>
+      <% @award.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bcs_key %><br />
+    <%= f.number_field :bcs_key %>
+  </div>
+  <div class="field">
+    <%= f.label :client_id %><br />
+    <%= f.number_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :program %><br />
+    <%= f.text_field :program %>
+  </div>
+  <div class="field">
+    <%= f.label :name_last_first %><br />
+    <%= f.text_field :name_last_first %>
+  </div>
+  <div class="field">
+    <%= f.label :referred_by %><br />
+    <%= f.text_field :referred_by %>
+  </div>
+  <div class="field">
+    <%= f.label :intake_date %><br />
+    <%= f.text_field :intake_date %>
+  </div>
+  <div class="field">
+    <%= f.label :admission_date %><br />
+    <%= f.date_select :admission_date %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br />
+    <%= f.date_select :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :city_state_zip %><br />
+    <%= f.text_field :city_state_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :race %><br />
+    <%= f.text_field :race %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_contact %><br />
+    <%= f.text_field :emergency_contact %>
+  </div>
+  <div class="field">
+    <%= f.label :emergency_contact_relation %><br />
+    <%= f.text_field :emergency_contact_relation %>
+  </div>
+  <div class="field">
+    <%= f.label :monthly_income_at_admission %><br />
+    <%= f.number_field :monthly_income_at_admission %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

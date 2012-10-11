@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Bcs key:</b>
+  <%= @award.bcs_key %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%= @award.client_id %>
+</p>
+
+<p>
+  <b>Program:</b>
+  <%= @award.program %>
+</p>
+
+<p>
+  <b>Name last first:</b>
+  <%= @award.name_last_first %>
+</p>
+
+<p>
+  <b>Referred by:</b>
+  <%= @award.referred_by %>
+</p>
+
+<p>
+  <b>Intake date:</b>
+  <%= @award.intake_date %>
+</p>
+
+<p>
+  <b>Admission date:</b>
+  <%= @award.admission_date %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @award.date_of_birth %>
+</p>
+
+<p>
+  <b>City state zip:</b>
+  <%= @award.city_state_zip %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @award.phone %>
+</p>
+
+<p>
+  <b>Race:</b>
+  <%= @award.race %>
+</p>
+
+<p>
+  <b>Emergency contact:</b>
+  <%= @award.emergency_contact %>
+</p>
+
+<p>
+  <b>Emergency contact relation:</b>
+  <%= @award.emergency_contact_relation %>
+</p>
+
+<p>
+  <b>Monthly income at admission:</b>
+  <%= @award.monthly_income_at_admission %>
+</p>
+
+
+<%= link_to 'Edit', edit_award_path(@award) %> |
+<%= link_to 'Back', awards_path %>

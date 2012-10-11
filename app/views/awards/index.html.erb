@@ -1,0 +1,49 @@
+<h1>Listing awards</h1>
+
+<table>
+  <tr>
+    <th>Bcs key</th>
+    <th>Client</th>
+    <th>Program</th>
+    <th>Name last first</th>
+    <th>Referred by</th>
+    <th>Intake date</th>
+    <th>Admission date</th>
+    <th>Date of birth</th>
+    <th>City state zip</th>
+    <th>Phone</th>
+    <th>Race</th>
+    <th>Emergency contact</th>
+    <th>Emergency contact relation</th>
+    <th>Monthly income at admission</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @awards.each do |award| %>
+  <tr>
+    <td><%= award.bcs_key %></td>
+    <td><%= award.client_id %></td>
+    <td><%= award.program %></td>
+    <td><%= award.name_last_first %></td>
+    <td><%= award.referred_by %></td>
+    <td><%= award.intake_date %></td>
+    <td><%= award.admission_date %></td>
+    <td><%= award.date_of_birth %></td>
+    <td><%= award.city_state_zip %></td>
+    <td><%= award.phone %></td>
+    <td><%= award.race %></td>
+    <td><%= award.emergency_contact %></td>
+    <td><%= award.emergency_contact_relation %></td>
+    <td><%= award.monthly_income_at_admission %></td>
+    <td><%= link_to 'Show', award %></td>
+    <td><%= link_to 'Edit', edit_award_path(award) %></td>
+    <td><%= link_to 'Destroy', award, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Award', new_award_path %>
