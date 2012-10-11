@@ -1,0 +1,43 @@
+<h1>Listing democap60s</h1>
+
+<table>
+  <tr>
+    <th>Bcs key</th>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Birth date</th>
+    <th>Ethnicity</th>
+    <th>Race</th>
+    <th>Num in family</th>
+    <th>Yearly income</th>
+    <th>Epc points</th>
+    <th>Amount under over poverty</th>
+    <th>Percent under over poverty</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @democap60s.each do |democap60| %>
+  <tr>
+    <td><%= democap60.bcs_key %></td>
+    <td><%= democap60.id %></td>
+    <td><%= democap60.name %></td>
+    <td><%= democap60.birth_date %></td>
+    <td><%= democap60.ethnicity %></td>
+    <td><%= democap60.race %></td>
+    <td><%= democap60.num_in_family %></td>
+    <td><%= democap60.yearly_income %></td>
+    <td><%= democap60.epc_points %></td>
+    <td><%= democap60.amount_under_over_poverty %></td>
+    <td><%= democap60.percent_under_over_poverty %></td>
+    <td><%= link_to 'Show', democap60 %></td>
+    <td><%= link_to 'Edit', edit_democap60_path(democap60) %></td>
+    <td><%= link_to 'Destroy', democap60, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Democap60', new_democap60_path %>

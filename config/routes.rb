@@ -1,5 +1,7 @@
 SamanthaCMS::Application.routes.draw do
 
+  resources :democap60s
+
   resources :dycds
 
   resources :cap60mails

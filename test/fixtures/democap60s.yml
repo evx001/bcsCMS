@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bcs_key: 1
+  id: 1
+  name: MyString
+  birth_date: MyString
+  ethnicity: MyString
+  race: MyString
+  num_in_family: 1
+  yearly_income: 1
+  epc_points: 1
+  amount_under_over_poverty: 1
+  percent_under_over_poverty: 1
+
+two:
+  bcs_key: 1
+  id: 1
+  name: MyString
+  birth_date: MyString
+  ethnicity: MyString
+  race: MyString
+  num_in_family: 1
+  yearly_income: 1
+  epc_points: 1
+  amount_under_over_poverty: 1
+  percent_under_over_poverty: 1

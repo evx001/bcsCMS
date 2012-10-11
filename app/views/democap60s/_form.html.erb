@@ -1,0 +1,61 @@
+<%= form_for(@democap60) do |f| %>
+  <% if @democap60.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@democap60.errors.count, "error") %> prohibited this democap60 from being saved:</h2>
+
+      <ul>
+      <% @democap60.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bcs_key %><br />
+    <%= f.number_field :bcs_key %>
+  </div>
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_date %><br />
+    <%= f.text_field :birth_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ethnicity %><br />
+    <%= f.text_field :ethnicity %>
+  </div>
+  <div class="field">
+    <%= f.label :race %><br />
+    <%= f.text_field :race %>
+  </div>
+  <div class="field">
+    <%= f.label :num_in_family %><br />
+    <%= f.number_field :num_in_family %>
+  </div>
+  <div class="field">
+    <%= f.label :yearly_income %><br />
+    <%= f.number_field :yearly_income %>
+  </div>
+  <div class="field">
+    <%= f.label :epc_points %><br />
+    <%= f.number_field :epc_points %>
+  </div>
+  <div class="field">
+    <%= f.label :amount_under_over_poverty %><br />
+    <%= f.number_field :amount_under_over_poverty %>
+  </div>
+  <div class="field">
+    <%= f.label :percent_under_over_poverty %><br />
+    <%= f.number_field :percent_under_over_poverty %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
