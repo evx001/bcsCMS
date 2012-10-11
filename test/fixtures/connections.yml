@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  marital_status: MyString
+  sex: MyString
+  dob: 2012-10-11
+  age: 1
+  language_ethnicity: MyString
+  race: MyString
+  address: MyString
+  county: MyString
+  cd: 1
+
+two:
+  name: MyString
+  marital_status: MyString
+  sex: MyString
+  dob: 2012-10-11
+  age: 1
+  language_ethnicity: MyString
+  race: MyString
+  address: MyString
+  county: MyString
+  cd: 1

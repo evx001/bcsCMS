@@ -1,0 +1,41 @@
+<h1>Listing connections</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Marital status</th>
+    <th>Sex</th>
+    <th>Dob</th>
+    <th>Age</th>
+    <th>Language ethnicity</th>
+    <th>Race</th>
+    <th>Address</th>
+    <th>County</th>
+    <th>Cd</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @connections.each do |connection| %>
+  <tr>
+    <td><%= connection.name %></td>
+    <td><%= connection.marital_status %></td>
+    <td><%= connection.sex %></td>
+    <td><%= connection.dob %></td>
+    <td><%= connection.age %></td>
+    <td><%= connection.language_ethnicity %></td>
+    <td><%= connection.race %></td>
+    <td><%= connection.address %></td>
+    <td><%= connection.county %></td>
+    <td><%= connection.cd %></td>
+    <td><%= link_to 'Show', connection %></td>
+    <td><%= link_to 'Edit', edit_connection_path(connection) %></td>
+    <td><%= link_to 'Destroy', connection, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Connection', new_connection_path %>

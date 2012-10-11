@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @connection.name %>
+</p>
+
+<p>
+  <b>Marital status:</b>
+  <%= @connection.marital_status %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%= @connection.sex %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @connection.dob %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @connection.age %>
+</p>
+
+<p>
+  <b>Language ethnicity:</b>
+  <%= @connection.language_ethnicity %>
+</p>
+
+<p>
+  <b>Race:</b>
+  <%= @connection.race %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @connection.address %>
+</p>
+
+<p>
+  <b>County:</b>
+  <%= @connection.county %>
+</p>
+
+<p>
+  <b>Cd:</b>
+  <%= @connection.cd %>
+</p>
+
+
+<%= link_to 'Edit', edit_connection_path(@connection) %> |
+<%= link_to 'Back', connections_path %>

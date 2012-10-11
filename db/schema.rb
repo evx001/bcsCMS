@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121011050409) do
+ActiveRecord::Schema.define(:version => 20121011054920) do
 
   create_table "awards", :force => true do |t|
     t.integer  "bcs_key"
@@ -44,6 +44,21 @@ ActiveRecord::Schema.define(:version => 20121011050409) do
     t.integer  "zipcode"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+  end
+
+  create_table "connections", :force => true do |t|
+    t.string   "name"
+    t.string   "marital_status"
+    t.string   "sex"
+    t.date     "dob"
+    t.integer  "age"
+    t.string   "language_ethnicity"
+    t.string   "race"
+    t.string   "address"
+    t.string   "county"
+    t.integer  "cd"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "democap60s", :force => true do |t|

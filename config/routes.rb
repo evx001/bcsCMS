@@ -1,5 +1,7 @@
 SamanthaCMS::Application.routes.draw do
 
+  resources :connections
+
   resources :awards
 
   resources :democap60s
